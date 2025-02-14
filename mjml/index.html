@@ -2,7 +2,7 @@
 <html lang="und" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
-  <title>Test Email Template</title>
+  <title>Slot Gallery</title>
   <!--[if !mso]><!-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!--<![endif]-->
@@ -63,6 +63,21 @@
         width: 100% !important;
         max-width: 100%;
       }
+
+      .mj-column-per-65 {
+        width: 65% !important;
+        max-width: 65%;
+      }
+
+      .mj-column-per-35 {
+        width: 35% !important;
+        max-width: 35%;
+      }
+
+      .mj-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
     }
 
   </style>
@@ -72,44 +87,149 @@
       max-width: 100%;
     }
 
+    .moz-text-html .mj-column-per-65 {
+      width: 65% !important;
+      max-width: 65%;
+    }
+
+    .moz-text-html .mj-column-per-35 {
+      width: 35% !important;
+      max-width: 35%;
+    }
+
+    .moz-text-html .mj-column-per-50 {
+      width: 50% !important;
+      max-width: 50%;
+    }
+
   </style>
   <style type="text/css">
-    @media (prefers-color-scheme: dark) {
-      .dark-section {
-        background-color:
-          #1a1a1a !important;
+    @media only screen and (max-width:479px) {
+      table.mj-full-width-mobile {
+        width: 100% !important;
       }
 
-      .content-text {
-        color: #ffffff !important;
+      td.mj-full-width-mobile {
+        width: auto !important;
       }
     }
 
   </style>
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
-  <meta name="x-apple-disable-message-reformatting" />
-  <!--[if !mso]><!-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!--<![endif]-->
+  <style>
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    /* Base styles */
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    .text-content-pink {
+      color: #e72ef5 !important;
+    }
+
+    /* Force Outlook to provide a "view in browser" button */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Dark theme styles */
+    .dark-theme {
+      background: linear-gradient(#000000, #000000);
+      background-color: #000000 !important;
+    }
+
+    .dark-theme-blue {
+      background: linear-gradient(#000932, #000932);
+      background-color: #000932 !important;
+    }
+
+    /* Gmail fix for white text in dark mode */
+    u+div>.body .gmail-screen {
+      background: #000000 !important;
+      mix-blend-mode: screen !important;
+    }
+
+    u+div>.body .gmail-difference {
+      background: #000000 !important;
+      mix-blend-mode: difference !important;
+    }
+
+    /* Outlook Dark Mode text color fix */
+    .keep-white {
+      mso-style-textfill-type: gradient;
+      mso-style-textfill-fill-gradientfill-stoplist: "0 #FFFFFF 0 100000,100000 #FFFFFF 0 100000";
+    }
+
+    .keep-pink {
+      mso-style-textfill-type: gradient;
+      mso-style-textfill-fill-gradientfill-stoplist: "0 #e72ef5 0 100000,100000 #e72ef5 0 100000";
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .dark-theme {
+        background: linear-gradient(#000000, #000000) !important;
+        background-color: #000000 !important;
+      }
+
+      .dark-theme-blue {
+        background: linear-gradient(#000932, #000932) !important;
+        background-color: #000932 !important;
+      }
+
+      .text-content {
+        color: #ffffff !important;
+      }
+
+      .text-content-pink {
+        color: #e72ef5 !important;
+      }
+    }
+
+    [data-ogsc] .dark-theme {
+      background: linear-gradient(#000000, #000000) !important;
+      background-color: #000000 !important;
+    }
+
+    [data-ogsc] .text-content {
+      color: #ffffff !important;
+    }
+
+  </style>
 </head>
 
 <body style="word-spacing:normal;">
-  <div style="" lang="und" dir="auto">
-    <!-- Header Section -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div class="dark-section" style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;">
+  <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Slot Gallery</div>
+  <div class="body dark-theme" style="" lang="und" dir="auto">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" class="content-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:28px;font-weight:bold;line-height:1;text-align:center;color:#ffffff;">Welcome to Our Newsletter</div>
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                          <tbody>
+                            <tr>
+                              <td style="width:128px;">
+                                <img alt="Image" src="https://promsklad.com.ua/test/img/logo_slot-gallery_light.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="128" height="auto" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -121,21 +241,27 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Content Section -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div class="dark-section" style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;">
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="dark-theme-blue" style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="left" class="content-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:16px;line-height:24px;text-align:left;color:#ffffff;">Hello there! 👋 We're excited to share our latest updates with you.</div>
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                          <tbody>
+                            <tr>
+                              <td style="width:550px;">
+                                <img alt="Image" src="https://promsklad.com.ua/test/img/banner_slot-gallery_main.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" height="auto" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -147,47 +273,86 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Button 1 -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><v:rect style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0, -0.5" position="0, -0.5" src="https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg" color="#1a1a1a" type="frame" size="1,1" aspect="atleast" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><![endif]-->
-    <div style="background:#1a1a1a url('https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg') center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;margin:0px auto;max-width:600px;">
-      <div style="line-height:0;font-size:0;">
-        <table align="center" background="https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a url('https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg') center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;width:100%;">
-          <tbody>
-            <tr>
-              <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
-                <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" style="font-size:0px;padding:15px 30px;word-break:break-word;">
-                          <div style="font-family:Arial, sans-serif;font-size:16px;font-weight:bold;line-height:1;text-align:center;color:#ffffff;"><a href="https://example.com/feature1" style="color: #ffffff; text-decoration: none">Explore Feature 1</a></div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!--[if mso | IE]></td></tr></table><![endif]-->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!--[if mso | IE]></v:textbox></v:rect></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;">
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="dark-theme-blue" style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:10px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:580px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:390px;" ><![endif]-->
+              <div class="mj-column-per-65 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td style="font-size:0px;word-break:break-word;">
-                        <div style="height:10px;line-height:10px;">&#8202;</div>
+                      <td align="left" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <div style="font-family:Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"><span class="text-content keep-white" style="color: #ffffff !important">
+                            <span class="gmail-screen">
+                              <span class="gmail-difference"> White TEXT TEST </span>
+                            </span>
+                          </span></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <div style="font-family:Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;"><span class="text-content keep-white" style="color: #ffffff !important">
+                            <span class="gmail-screen">
+                              <span class="gmail-difference"> White TEXT TEST </span>
+                            </span>
+                          </span>
+                          <span class="text-content-pink keep-pink" style="color: #e72ef5 !important">
+                            <a href="{{snippets.redirect}}game/fortune-five" target="_blank" style="color: #e72ef5 !important; text-decoration: none" class="gmail-screen-pink" rel="noopener">
+                              <span class="gmail-difference-pink">Pink LINK TEXT</span>
+                            </a>
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="text-content-pink keep-pink" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <div style="font-family:Arial, sans-serif;font-size:13px;line-height:1;text-align:left;color:#e72ef5;"><a href="{{snippets.redirect}}game/fortune-five" target="_blank" style="color: #e72ef5 !important; text-decoration: none" class="gmail-screen-pink" rel="noopener">
+                            <span class="gmail-difference-pink">"Fortune Five"!</span>
+                          </a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:210px;" ><![endif]-->
+              <div class="mj-column-per-35 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="#ff69b4" role="presentation" style="border:none;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:#ff69b4;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:#ff69b4;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">GET BONUS</span>
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="transparent" role="presentation" style="border:2px solid #ff69b4;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:transparent;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:bold;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">Code: FF100</span>
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>
@@ -199,49 +364,55 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Button 2 -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><v:rect style="width:600px;" xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"><v:fill origin="0, -0.5" position="0, -0.5" src="https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg" color="#1a1a1a" type="frame" size="1,1" aspect="atleast" /><v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"><![endif]-->
-    <div style="background:#1a1a1a url('https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg') center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;margin:0px auto;max-width:600px;">
-      <div style="line-height:0;font-size:0;">
-        <table align="center" background="https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a url('https://userimg-assets.customeriomail.com/images/client-env-110265/1689688764313_Rectangle%205_01H5MMRW8DQPSTGFSHCWB4ZCDP.jpg') center top / cover no-repeat;background-position:center top;background-repeat:no-repeat;background-size:cover;width:100%;">
-          <tbody>
-            <tr>
-              <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
-                <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" style="font-size:0px;padding:15px 30px;word-break:break-word;">
-                          <div style="font-family:Arial, sans-serif;font-size:16px;font-weight:bold;line-height:1;text-align:center;color:#ffffff;"><a href="https://example.com/feature2" style="color: #ffffff; text-decoration: none">Explore Feature 2</a></div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!--[if mso | IE]></td></tr></table><![endif]-->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <!--[if mso | IE]></v:textbox></v:rect></td></tr></table><![endif]-->
-    <!-- Footer Section -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-section-outlook" role="presentation" style="width:600px;" width="600" bgcolor="#1a1a1a" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div class="dark-section" style="background:#1a1a1a;background-color:#1a1a1a;margin:0px auto;max-width:600px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#1a1a1a;background-color:#1a1a1a;width:100%;">
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="dark-theme-blue" style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
-                      <td align="center" class="content-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Arial, sans-serif;font-size:14px;line-height:1;text-align:center;color:#ffffff;">© 2025 Your Company. All rights reserved.</div>
+                      <td align="center" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="#ff69b4" role="presentation" style="border:none;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:#ff69b4;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:#ff69b4;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">Call to Action</span>
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="transparent" role="presentation" style="border:2px solid #ff69b4;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:transparent;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">Call to Action</span>
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </td>
                     </tr>
                   </tbody>

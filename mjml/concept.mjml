@@ -32,8 +32,12 @@
 
         /* Dark theme styles */
         .dark-theme {
-          background: linear-gradient(#262524, #262524);
-          background-color: #262524 !important;
+          background: linear-gradient(#000000, #000000);
+          background-color: #000000 !important;
+        }
+        .dark-theme-blue {
+          background: linear-gradient(#000932, #000932);
+          background-color: #000932 !important;
         }
 
         /* Gmail fix for white text in dark mode */
@@ -54,8 +58,12 @@
 
         @media (prefers-color-scheme: dark) {
           .dark-theme {
-            background: linear-gradient(#262524, #262524) !important;
-            background-color: #262524 !important;
+            background: linear-gradient(#000000, #000000) !important;
+            background-color: #000000 !important;
+          }
+          .dark-theme-blue {
+            background: linear-gradient(#000932, #000932) !important;
+            background-color: #000932 !important;
           }
           .text-content {
             color: #ffffff !important;
@@ -63,8 +71,8 @@
         }
 
         [data-ogsc] .dark-theme {
-          background: linear-gradient(#262524, #262524) !important;
-          background-color: #262524 !important;
+          background: linear-gradient(#000000, #000000) !important;
+          background-color: #000000 !important;
         }
 
         [data-ogsc] .text-content {
@@ -73,17 +81,27 @@
       </style>
     </mj-raw>
   </mj-head>
-  <mj-body css-class="body">
-    <mj-section css-class="dark-theme">
+  <mj-body css-class="body dark-theme">
+    <mj-section padding="0">
       <mj-column>
         <mj-image
           src="https://promsklad.com.ua/test/img/logo_slot-gallery_light.png"
+          alt="Image"
+          width="128px"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="dark-theme-blue" padding="0">
+      <mj-column>
+        <mj-image
+          src="https://promsklad.com.ua/test/img/banner_slot-gallery_main.png"
           alt="Image"
         />
       </mj-column>
     </mj-section>
 
-    <mj-section css-class="dark-theme">
+    <mj-section css-class="dark-theme-blue">
       <mj-column>
         <mj-text css-class="text-content keep-white" color="#ffffff">
           <span class="gmail-screen">
@@ -93,15 +111,30 @@
       </mj-column>
     </mj-section>
 
-    <mj-section css-class="dark-theme">
+    <mj-section css-class="dark-theme-blue">
       <mj-column>
         <mj-button
           css-class="text-content keep-white"
           color="#ffffff"
           background-color="#ff69b4"
+          border-radius="12px"
           href="https://google.com"
         >
-          <span class="gmail-screen" background-color="#ff69b4">
+          <span class="gmail-screen">
+            <span class="gmail-difference">Call to Action</span>
+          </span>
+        </mj-button>
+      </mj-column>
+      <mj-column>
+        <mj-button
+          css-class="text-content keep-white"
+          color="#ffffff"
+          background-color="transparent"
+          border="2px solid #ff69b4"
+          border-radius="12px"
+          href="https://google.com"
+        >
+          <span class="gmail-screen">
             <span class="gmail-difference">Call to Action</span>
           </span>
         </mj-button>

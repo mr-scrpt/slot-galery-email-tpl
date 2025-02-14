@@ -63,6 +63,11 @@
         width: 100% !important;
         max-width: 100%;
       }
+
+      .mj-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
     }
 
   </style>
@@ -70,6 +75,11 @@
     .moz-text-html .mj-column-per-100 {
       width: 100% !important;
       max-width: 100%;
+    }
+
+    .moz-text-html .mj-column-per-50 {
+      width: 50% !important;
+      max-width: 50%;
     }
 
   </style>
@@ -109,8 +119,13 @@
 
     /* Dark theme styles */
     .dark-theme {
-      background: linear-gradient(#262524, #262524);
-      background-color: #262524 !important;
+      background: linear-gradient(#000000, #000000);
+      background-color: #000000 !important;
+    }
+
+    .dark-theme-blue {
+      background: linear-gradient(#000932, #000932);
+      background-color: #000932 !important;
     }
 
     /* Gmail fix for white text in dark mode */
@@ -132,8 +147,13 @@
 
     @media (prefers-color-scheme: dark) {
       .dark-theme {
-        background: linear-gradient(#262524, #262524) !important;
-        background-color: #262524 !important;
+        background: linear-gradient(#000000, #000000) !important;
+        background-color: #000000 !important;
+      }
+
+      .dark-theme-blue {
+        background: linear-gradient(#000932, #000932) !important;
+        background-color: #000932 !important;
       }
 
       .text-content {
@@ -142,8 +162,8 @@
     }
 
     [data-ogsc] .dark-theme {
-      background: linear-gradient(#262524, #262524) !important;
-      background-color: #262524 !important;
+      background: linear-gradient(#000000, #000000) !important;
+      background-color: #000000 !important;
     }
 
     [data-ogsc] .text-content {
@@ -155,13 +175,13 @@
 
 <body style="word-spacing:normal;">
   <div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Slot Gallery</div>
-  <div class="body" style="" lang="und" dir="auto">
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div class="dark-theme" style="margin:0px auto;max-width:600px;">
+  <div class="body dark-theme" style="" lang="und" dir="auto">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
@@ -171,8 +191,8 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                           <tbody>
                             <tr>
-                              <td style="width:550px;">
-                                <img alt="Image" src="https://promsklad.com.ua/test/img/logo_slot-gallery_light.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" height="auto" />
+                              <td style="width:128px;">
+                                <img alt="Image" src="https://promsklad.com.ua/test/img/logo_slot-gallery_light.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="128" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -188,8 +208,40 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div class="dark-theme" style="margin:0px auto;max-width:600px;">
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="dark-theme-blue" style="margin:0px auto;max-width:600px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                          <tbody>
+                            <tr>
+                              <td style="width:550px;">
+                                <img alt="Image" src="https://promsklad.com.ua/test/img/banner_slot-gallery_main.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="550" height="auto" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="dark-theme-blue-outlook" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="dark-theme-blue" style="margin:0px auto;max-width:600px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
           <tr>
@@ -220,8 +272,8 @@
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
                     <tr>
@@ -229,10 +281,34 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                           <tbody>
                             <tr>
-                              <td align="center" bgcolor="#ff69b4" role="presentation" style="border:none;border-radius:3px;cursor:auto;mso-padding-alt:10px 25px;background:#ff69b4;" valign="middle">
-                                <a href="https://google.com" style="display:inline-block;background:#ff69b4;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:3px;" target="_blank">
-                                  <span class="gmail-screen" background-color="#ff69b4">
-                                    <span css-class="gmail-difference" background-color="#ff69b4">Call to Action</span>
+                              <td align="center" bgcolor="#ff69b4" role="presentation" style="border:none;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:#ff69b4;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:#ff69b4;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">Call to Action</span>
+                                  </span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="center" class="text-content keep-white" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                          <tbody>
+                            <tr>
+                              <td align="center" bgcolor="transparent" role="presentation" style="border:2px solid #ff69b4;border-radius:12px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;" valign="middle">
+                                <a href="https://google.com" style="display:inline-block;background:transparent;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:12px;" target="_blank">
+                                  <span class="gmail-screen">
+                                    <span class="gmail-difference">Call to Action</span>
                                   </span>
                                 </a>
                               </td>
