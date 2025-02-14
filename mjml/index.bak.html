@@ -11,84 +11,88 @@
     </mj-attributes>
     <mj-raw>
       <style>
-        :root {
-          color-scheme: light dark;
-          supported-color-schemes: light dark;
-        }
-
-        /* Base styles */
-        body {
-          margin: 0;
-          padding: 0;
-          width: 100% !important;
-          -webkit-text-size-adjust: 100%;
-          -ms-text-size-adjust: 100%;
-        }
-        .text-content-pink {
-          color: #e72ef5 !important;
-        }
-
-        /* Force Outlook to provide a "view in browser" button */
-        #outlook a {
-          padding: 0;
-        }
-
-        /* Dark theme styles */
-        .dark-theme {
-          background: linear-gradient(#000000, #000000);
-          background-color: #000000 !important;
-        }
-        .dark-theme-blue {
-          background: linear-gradient(#000932, #000932);
-          background-color: #000932 !important;
-        }
-
-        /* Gmail fix for white text in dark mode */
-        u + div > .body .gmail-screen {
-          background: #000000 !important;
-          mix-blend-mode: screen !important;
-        }
-        u + div > .body .gmail-difference {
-          background: #000000 !important;
-          mix-blend-mode: difference !important;
-        }
-
-        /* Outlook Dark Mode text color fix */
-        .keep-white {
-          mso-style-textfill-type: gradient;
-          mso-style-textfill-fill-gradientfill-stoplist: "0 #FFFFFF 0 100000,100000 #FFFFFF 0 100000";
-        }
-
-        .keep-pink {
-          mso-style-textfill-type: gradient;
-          mso-style-textfill-fill-gradientfill-stoplist: "0 #e72ef5 0 100000,100000 #e72ef5 0 100000";
-        }
-
-        @media (prefers-color-scheme: dark) {
-          .dark-theme {
-            background: linear-gradient(#000000, #000000) !important;
-            background-color: #000000 !important;
+          :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
           }
-          .dark-theme-blue {
-            background: linear-gradient(#000932, #000932) !important;
-            background-color: #000932 !important;
-          }
-          .text-content {
-            color: #ffffff !important;
+
+          /* Base styles */
+          body {
+            margin: 0;
+            padding: 0;
+            font-family: font-family:Tahoma,Verdana,sans-serif;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
           }
           .text-content-pink {
             color: #e72ef5 !important;
           }
+        .text-justify {
+          text-align: justify;
         }
 
-        [data-ogsc] .dark-theme {
-          background: linear-gradient(#000000, #000000) !important;
-          background-color: #000000 !important;
-        }
+          /* Force Outlook to provide a "view in browser" button */
+          #outlook a {
+            padding: 0;
+          }
 
-        [data-ogsc] .text-content {
-          color: #ffffff !important;
-        }
+          /* Dark theme styles */
+          .dark-theme {
+            background: linear-gradient(#000000, #000000);
+            background-color: #000000 !important;
+          }
+          .dark-theme-blue {
+            background: linear-gradient(#000932, #000932);
+            background-color: #000932 !important;
+          }
+
+          /* Gmail fix for white text in dark mode */
+          u + div > .body .gmail-screen {
+            background: #000000 !important;
+            mix-blend-mode: screen !important;
+          }
+          u + div > .body .gmail-difference {
+            background: #000000 !important;
+            mix-blend-mode: difference !important;
+          }
+
+          /* Outlook Dark Mode text color fix */
+          .keep-white {
+            mso-style-textfill-type: gradient;
+            mso-style-textfill-fill-gradientfill-stoplist: "0 #FFFFFF 0 100000,100000 #FFFFFF 0 100000";
+          }
+
+          .keep-pink {
+            mso-style-textfill-type: gradient;
+            mso-style-textfill-fill-gradientfill-stoplist: "0 #e72ef5 0 100000,100000 #e72ef5 0 100000";
+          }
+
+          @media (prefers-color-scheme: dark) {
+            .dark-theme {
+              background: linear-gradient(#000000, #000000) !important;
+              background-color: #000000 !important;
+            }
+            .dark-theme-blue {
+              background: linear-gradient(#000932, #000932) !important;
+              background-color: #000932 !important;
+            }
+            .text-content {
+              color: #ffffff !important;
+            }
+            .text-content-pink {
+              color: #e72ef5 !important;
+            }
+          }
+
+          [data-ogsc] .dark-theme {
+            background: linear-gradient(#000000, #000000) !important;
+            background-color: #000000 !important;
+          }
+
+          [data-ogsc] .text-content {
+            color: #ffffff !important;
+          }
       </style>
     </mj-raw>
   </mj-head>
@@ -115,9 +119,10 @@
     <mj-section css-class="dark-theme-blue">
       <mj-column width="65%">
         <mj-text
-          align="justify"
+          font-size="14px"
           font-family="Roboto,Tahoma,Verdana,Segoe,sans-serif"
           line-height="1.2"
+          align="justify"
         >
           <span
             class="text-content keep-white"
@@ -142,6 +147,7 @@
               <span class="gmail-difference-pink">"Fortune Five"!</span>
             </a>
           </span>
+
           <span
             class="text-content keep-white"
             style="color: #ffffff !important"
@@ -170,7 +176,6 @@
               >
             </a>
           </span>
-
           <span
             class="text-content keep-white"
             style="color: #ffffff !important"
@@ -180,7 +185,24 @@
             </span>
           </span>
         </mj-text>
+
+        <mj-button
+          css-class="text-content keep-white"
+          color="#ffffff"
+          background-color="transparent"
+          border="2px solid #ff69b4"
+          border-radius="12px"
+          font-weight="bold"
+          align="left"
+          width="200px"
+          href="{{snippets.redirect}}/game/fortune-five"
+        >
+          <span class="gmail-screen">
+            <span class="gmail-difference">Play Now</span>
+          </span>
+        </mj-button>
       </mj-column>
+
       <mj-column width="35%">
         <mj-button
           css-class="text-content keep-white"
@@ -212,31 +234,55 @@
 
     <mj-section css-class="dark-theme-blue">
       <mj-column>
-        <mj-button
-          css-class="text-content keep-white"
-          color="#ffffff"
-          background-color="#ff69b4"
-          border-radius="12px"
-          href="https://google.com"
-        >
-          <span class="gmail-screen">
-            <span class="gmail-difference">Call to Action</span>
+        <mj-text>
+          <span
+            class="text-content keep-white"
+            style="color: #ffffff !important"
+          >
+            <span class="gmail-screen">
+              <div class="gmail-difference">Your login:</div>
+            </span>
           </span>
-        </mj-button>
+
+          <span
+            class="text-content-pink keep-pink"
+            style="color: #e72ef5 !important"
+          >
+            <span
+              style="color: #e72ef5 !important; text-decoration: none"
+              class="gmail-screen-pink"
+            >
+              <span class="gmail-difference-pink">{{customer.email}} </span>
+            </span>
+          </span>
+        </mj-text>
       </mj-column>
       <mj-column>
-        <mj-button
-          css-class="text-content keep-white"
-          color="#ffffff"
-          background-color="transparent"
-          border="2px solid #ff69b4"
-          border-radius="12px"
-          href="https://google.com"
-        >
-          <span class="gmail-screen">
-            <span class="gmail-difference">Call to Action</span>
+        <mj-text align="right">
+          <span
+            class="text-content keep-white"
+            style="color: #ffffff !important"
+          >
+            <span class="gmail-screen">
+              <div class="gmail-difference">Forgot your password?</div>
+            </span>
           </span>
-        </mj-button>
+
+          <span
+            class="text-content-pink keep-pink"
+            style="color: #e72ef5 !important"
+          >
+            <a
+              href="{{snippets.redirect}}/users/forgot-password"
+              target="_blank"
+              style="color: #e72ef5 !important; text-decoration: none"
+              class="gmail-screen-pink"
+              rel="noopener"
+            >
+              <span class="gmail-difference-pink">Reset</span>
+            </a>
+          </span>
+        </mj-text>
       </mj-column>
     </mj-section>
   </mj-body>
