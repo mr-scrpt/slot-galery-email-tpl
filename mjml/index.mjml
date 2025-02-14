@@ -180,6 +180,21 @@
             </span>
           </span>
         </mj-text>
+        <mj-button
+          css-class="text-content keep-white"
+          color="#ffffff"
+          background-color="transparent"
+          border="2px solid #ff69b4"
+          border-radius="12px"
+          font-weight="bold"
+          align="left"
+          width="200px"
+          href="{{snippets.redirect}}/game/fortune-five"
+        >
+          <span class="gmail-screen">
+            <span class="gmail-difference">Play Now</span>
+          </span>
+        </mj-button>
       </mj-column>
       <mj-column width="35%">
         <mj-button
