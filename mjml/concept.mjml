@@ -1,0 +1,111 @@
+<mjml>
+  <mj-head>
+    <mj-title>Slot Gallery</mj-title>
+    <mj-preview>Slot Gallery</mj-preview>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <style>
+        :root {
+          color-scheme: light dark;
+          supported-color-schemes: light dark;
+        }
+
+        /* Base styles */
+        body {
+          margin: 0;
+          padding: 0;
+          width: 100% !important;
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+        }
+
+        /* Force Outlook to provide a "view in browser" button */
+        #outlook a {
+          padding: 0;
+        }
+
+        /* Dark theme styles */
+        .dark-theme {
+          background: linear-gradient(#262524, #262524);
+          background-color: #262524 !important;
+        }
+
+        /* Gmail fix for white text in dark mode */
+        u + div > .body .gmail-screen {
+          background: #000000 !important;
+          mix-blend-mode: screen !important;
+        }
+        u + div > .body .gmail-difference {
+          background: #000000 !important;
+          mix-blend-mode: difference !important;
+        }
+
+        /* Outlook Dark Mode text color fix */
+        .keep-white {
+          mso-style-textfill-type: gradient;
+          mso-style-textfill-fill-gradientfill-stoplist: "0 #FFFFFF 0 100000,100000 #FFFFFF 0 100000";
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .dark-theme {
+            background: linear-gradient(#262524, #262524) !important;
+            background-color: #262524 !important;
+          }
+          .text-content {
+            color: #ffffff !important;
+          }
+        }
+
+        [data-ogsc] .dark-theme {
+          background: linear-gradient(#262524, #262524) !important;
+          background-color: #262524 !important;
+        }
+
+        [data-ogsc] .text-content {
+          color: #ffffff !important;
+        }
+      </style>
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="body">
+    <mj-section css-class="dark-theme">
+      <mj-column>
+        <mj-image
+          src="https://promsklad.com.ua/test/img/logo_slot-gallery_light.png"
+          alt="Image"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="dark-theme">
+      <mj-column>
+        <mj-text css-class="text-content keep-white" color="#ffffff">
+          <span class="gmail-screen">
+            <span class="gmail-difference">Your Dark Theme Email</span>
+          </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="dark-theme">
+      <mj-column>
+        <mj-button
+          css-class="text-content keep-white"
+          color="#ffffff"
+          background-color="#ff69b4"
+          href="https://google.com"
+        >
+          <span class="gmail-screen" background-color="#ff69b4">
+            <span class="gmail-difference">Call to Action</span>
+          </span>
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

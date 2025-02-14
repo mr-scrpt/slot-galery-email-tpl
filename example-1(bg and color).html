@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Dark Mode meta tags -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>Dark Theme Email</title>
+
+    <style>
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      /* Base styles */
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      /* Force Outlook to provide a "view in browser" button */
+      #outlook a {
+        padding: 0;
+      }
+
+      /* Dark theme styles */
+      .dark-theme {
+        background: linear-gradient(#262524, #262524);
+        background-color: #262524 !important;
+      }
+
+      /* Gmail fix for white text in dark mode */
+      u + .body .gmail-screen {
+        background: #000000 !important;
+        mix-blend-mode: screen !important;
+      }
+      u + .body .gmail-difference {
+        background: #000000 !important;
+        mix-blend-mode: difference !important;
+      }
+
+      /* Outlook Dark Mode text color fix */
+      .keep-white {
+        mso-style-textfill-type: gradient;
+        mso-style-textfill-fill-gradientfill-stoplist: "0 #FFFFFF 0 100000,100000 #FFFFFF 0 100000";
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .dark-theme {
+          background: linear-gradient(#262524, #262524) !important;
+          background-color: #262524 !important;
+        }
+        .text-content {
+          color: #ffffff !important;
+        }
+      }
+
+      [data-ogsc] .dark-theme {
+        background: linear-gradient(#262524, #262524) !important;
+        background-color: #262524 !important;
+      }
+
+      [data-ogsc] .text-content {
+        color: #ffffff !important;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <!--[if mso]>
+    <table role="presentation" width="100%">
+    <tr>
+    <td>
+    <![endif]-->
+    <div
+      class="dark-theme"
+      style="max-width: 600px; margin: 0 auto; padding: 20px"
+    >
+      <table role="presentation" width="100%" style="border-spacing: 0">
+        <tr>
+          <td align="center" style="padding: 40px 0">
+            <h1
+              class="text-content keep-white"
+              style="
+                margin: 0;
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+                color: #ffffff;
+              "
+            >
+              <span class="gmail-screen">
+                <span class="gmail-difference"> Your Dark Theme Email </span>
+              </span>
+            </h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" style="padding: 20px 0">
+            <p
+              class="text-content keep-white"
+              style="
+                margin: 0;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #ffffff;
+              "
+            >
+              <span class="gmail-screen">
+                <span class="gmail-difference">
+                  This is a sample email template with dark theme support. The
+                  background will stay dark and the text will remain white in
+                  both light and dark modes across different email clients.
+                </span>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 30px 0">
+            <div
+              style="
+                background: #4a90e2;
+                padding: 12px 25px;
+                border-radius: 5px;
+                display: inline-block;
+              "
+            >
+              <a
+                href="#"
+                class="text-content keep-white"
+                style="
+                  color: #ffffff;
+                  text-decoration: none;
+                  font-family: Arial, sans-serif;
+                  font-size: 16px;
+                "
+              >
+                <span class="gmail-screen">
+                  <span class="gmail-difference"> Call to Action </span>
+                </span>
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </body>
+</html>

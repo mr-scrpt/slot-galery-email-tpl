@@ -1,0 +1,49 @@
+<!doctyape html>
+<html
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  lang="en"
+>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&amp;display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      /* Базовые стили */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+      }
+
+      .email-content {
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      /* Специальный селектор для Gmail */
+      u + .body .email-content {
+        mix-blend-mode: difference;
+      }
+
+      /* Текст также нужно обработать blend mode */
+      u + .body .email-text {
+        mix-blend-mode: difference;
+        background-color: #000000;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="email-content">
+      <p class="email-text">TEST</p>
+    </div>
+  </body>
+</html>

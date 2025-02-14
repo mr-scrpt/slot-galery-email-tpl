@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <title>AceIT</title>
+    <style>
+      u + .body .yourElement {
+        mix-blend-mode: difference;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1a1a1a !important;
+          color: #ffffff !important;
+        }
+        .content {
+          background-color: #2d2d2d !important;
+        }
+        .header {
+          background-color: #000000 !important;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width: 100% !important;
+        }
+        .content {
+          padding: 20px !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    "
+  >
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      align="center"
+      width="100%"
+      style="max-width: 600px"
+      class="email-container"
+    >
+      <tr>
+        <td
+          class="header"
+          style="padding: 20px; text-align: center; background-color: #ffffff"
+        >
+          <img
+            src="https://aceit.group/logo.png"
+            alt="AceIT Logo"
+            style="width: 150px; height: auto"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="content" style="background-color: #ffffff; padding: 40px">
+          <h1
+            style="
+              margin: 0 0 20px 0;
+              font-size: 24px;
+              line-height: 30px;
+              color: #333333;
+            "
+          >
+            Новая заявка с сайта AceIT
+          </h1>
+          <p
+            style="
+              margin: 0 0 15px;
+              font-size: 16px;
+              line-height: 24px;
+              color: #555555;
+            "
+          >
+            Спасибо за ваш интерес к нашей компании! Мы рассмотрим вашу заявку в
+            ближайшее время и свяжемся с вами.
+          </p>
+          <p
+            style="
+              margin: 0 0 15px;
+              font-size: 16px;
+              line-height: 24px;
+              color: #555555;
+            "
+          >
+            С уважением,<br />
+            Команда AceIT
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="background-color: #333333; padding: 20px; text-align: center"
+        >
+          <p
+            style="
+              margin: 0;
+              font-size: 14px;
+              line-height: 20px;
+              color: #ffffff;
+            "
+          >
+            © 2024 AceIT. Все права защищены.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
