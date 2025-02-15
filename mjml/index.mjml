@@ -286,65 +286,78 @@
           <div>
             <span
               class="text-content keep-white"
-              style="color: #767da2 !important"
+              style="color: #767da2 !important; font-size: 12px"
             >
               <span class="gmail-screen">
                 <span class="gmail-difference">
-                  <ul>
-                    <li>Dive into spinning fun with</li>
-                    <li>Dive into spinning fun with</li>
-                    <li>Dive into spinning fun with</li>
-                    <li>
-                      The promotion is active: 08.01.2025, 00:00 UTC -
-                      10.01.2025, 23:59 UTC;
-                    </li>
+                  <div>
+                    • The promotion is active: 08.01.2025, 00:00 UTC -
+                    10.01.2025, 23:59 UTC;
+                  </div>
 
-                    <li>
-                      If the “Fortune Five” slot isn't available in your
-                      country, you will get free spins in “Mice & Magic Wonder
-                      Spin” slot;
-                    </li>
-                    <li>
-                      Minimum deposit for the bonus: {{snippets.var30eurnew}}
-                    </li>
+                  <div>
+                    • If the “Fortune Five” slot isn't available in your
+                    country, you will get free spins in “Mice & Magic Wonder
+                    Spin” slot;
+                  </div>
+                  <div>
+                    • Minimum deposit for the bonus: {{snippets.var30eurnew}}
+                  </div>
 
-                    <li>Wager for the bonus: x40;</li>
+                  <div>• Wager for the bonus: x40;</div>
 
-                    <li>
-                      Maximum deposit bonus amount: {{snippets.var150eurnew}}
-                    </li>
+                  <div>
+                    • Maximum deposit bonus amount: {{snippets.var150eurnew}}
+                  </div>
 
-                    <li>Promo cannot be combined with other offers;</li>
+                  <div>• Promo cannot be combined with other offers;</div>
 
-                    <li>Only one offer is available to one client;</li>
+                  <div>• Only one offer is available to one client;</div>
 
-                    <li>
-                      Canceling any of the free spin sets, cash bonuses or their
-                      results within one promotion will automatically lead to
-                      further cancelation of the remaining parts of this
-                      promotion;
-                    </li>
+                  <div>
+                    • Canceling any of the free spin sets, cash bonuses or their
+                    results within one promotion will automatically lead to
+                    further cancelation of the remaining parts of this
+                    promotion;
+                  </div>
 
-                    <li>
-                      The maximum win amount from any deposit free spin bonus is
-                      {{snippets.valentin100}} or equivalent in other
-                      currencies/cryptocurrencies unless otherwise indicated.
-                      Deposit free spins have a maximum cashout in the amount of
-                      x10 from the deposit sum unless otherwise stated;
-                    </li>
+                  <div>
+                    • The maximum win amount from any deposit free spin bonus is
+                    {{snippets.valentin100}} or equivalent in other
+                    currencies/cryptocurrencies unless otherwise indicated.
+                    Deposit free spins have a maximum cashout in the amount of
+                    x10 from the deposit sum unless otherwise stated;
+                  </div>
 
-                    <li>
-                      Deposit cash bonuses have a maximum cashout of
-                      {{snippets.var3000}} or equivalent in other
-                      currencies/cryptocurrencies unless otherwise indicated
-                    </li>
-                  </ul>
+                  <div>
+                    • Deposit cash bonuses have a maximum cashout of
+                    {{snippets.var3000}} or equivalent in other
+                    currencies/cryptocurrencies unless otherwise indicated
+                  </div>
                 </span>
               </span>
             </span>
           </div>
         </mj-text></mj-column
       >
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column>
+        <mj-text align="center">
+          <span
+            class="text-content keep-white"
+            style="
+              color: #767da2 !important;
+              font-size: 12px;
+              text-align: center;
+            "
+          >
+            <span class="gmail-screen">
+              <span class="gmail-difference"> {{snippets.footer}}</span>
+            </span>
+          </span>
+        </mj-text>
+      </mj-column>
     </mj-section>
   </mj-body>
 </mjml>
