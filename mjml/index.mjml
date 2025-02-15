@@ -119,72 +119,51 @@
           font-family="Roboto,Tahoma,Verdana,Segoe,sans-serif"
           line-height="1.2"
         >
-          <span
-            class="text-content keep-white"
-            style="color: #ffffff !important"
-          >
-            <span class="gmail-screen">
-              <span class="gmail-difference">Dive into spinning fun with</span>
-            </span>
-          </span>
-
-          <span
-            class="text-content-pink keep-pink"
-            style="color: #e72ef5 !important"
-          >
-            <a
-              href="{{snippets.redirect}}game/fortune-five"
-              target="_blank"
-              style="color: #e72ef5 !important; text-decoration: none"
-              class="gmail-screen-pink"
-              rel="noopener"
+          <span style="color: #ffffff">
+            <span class="gmail-screen"
+              ><span class="gmail-difference"
+                >Dive into spinning fun with</span
+              ></span
             >
-              <span class="gmail-difference-pink">"Fortune Five"!</span>
-            </a>
           </span>
-          <span
-            class="text-content keep-white"
-            style="color: #ffffff !important"
+          <a
+            href="{{snippets.redirect}}game/fortune-five"
+            target="_blank"
+            style="color: #e72ef5; text-decoration: none"
+            rel="noopener"
           >
-            <span class="gmail-screen">
-              <span class="gmail-difference"
+            <span>"Fortune Five"!</span>
+          </a>
+
+          <span style="color: #ffffff">
+            <span class="gmail-screen"
+              ><span class="gmail-difference"
                 >This classic, fruit-themed slot harks back to when slots could
                 only be enjoyed in land-based casinos. Thankfully, this game can
                 now be played wherever you are, especially if you have</span
-              >
-            </span>
-          </span>
-          <span
-            class="text-content-pink keep-pink"
-            style="color: #e72ef5 !important"
-          >
-            <a
-              href="{{snippets.redirect}}/?fast-deposit=modal&amp;bonus=FF100"
-              target="_blank"
-              style="color: #e72ef5 !important; text-decoration: none"
-              class="gmail-screen-pink"
-              rel="noopener"
+              ></span
             >
-              <span class="gmail-difference-pink"
-                >100% up to {{snippets.valentin150}} + 75 Free Spins</span
-              >
-            </a>
           </span>
 
-          <span
-            class="text-content keep-white"
-            style="color: #ffffff !important"
+          <a
+            href="{{snippets.redirect}}/?fast-deposit=modal&amp;bonus=FF100"
+            target="_blank"
+            style="color: #e72ef5; text-decoration: none"
+            rel="noopener"
           >
-            <span class="gmail-screen">
-              <span class="gmail-difference">by your side!</span>
-            </span>
+            100% up to {{snippets.valentin150}} + 75 Free Spins
+          </a>
+          <span style="color: #ffffff">
+            <span class="gmail-screen"
+              ><span class="gmail-difference">by your side!</span></span
+            >
           </span>
         </mj-text>
         <mj-button
           css-class="text-content keep-white"
           color="#ffffff"
           background-color="transparent"
-          border="2px solid #ff69b4"
+          border="2px solid #e72ef5"
           border-radius="12px"
           font-weight="bold"
           align="left"
@@ -200,7 +179,7 @@
         <mj-button
           css-class="text-content keep-white"
           color="#ffffff"
-          background-color="#ff69b4"
+          background-color="#e72ef5"
           border-radius="12px"
           font-weight="bold"
           href="https://google.com"
@@ -213,7 +192,7 @@
           css-class="text-content keep-white"
           color="#ffffff"
           background-color="transparent"
-          border="2px solid #ff69b4"
+          border="2px solid #e72ef5"
           border-radius="12px"
           font-weight="bold"
           href="https://google.com"
@@ -226,33 +205,146 @@
     </mj-section>
 
     <mj-section css-class="dark-theme-blue">
-      <mj-column>
-        <mj-button
-          css-class="text-content keep-white"
-          color="#ffffff"
-          background-color="#ff69b4"
-          border-radius="12px"
-          href="https://google.com"
-        >
-          <span class="gmail-screen">
-            <span class="gmail-difference">Call to Action</span>
-          </span>
-        </mj-button>
+      <mj-column width="50%">
+        <mj-text>
+          <div
+            class="text-content keep-white"
+            style="color: #ffffff !important"
+          >
+            <span class="gmail-screen">
+              <span class="gmail-difference">Your login:</span>
+            </span>
+          </div>
+
+          <div
+            class="text-content-pink keep-pink"
+            style="color: #e72ef5 !important"
+          >
+            <span
+              style="color: #e72ef5 !important; text-decoration: none"
+              class="gmail-screen-pink"
+            >
+              <span class="gmail-difference-pink">{{customer.email}} </span>
+            </span>
+          </div>
+        </mj-text>
       </mj-column>
-      <mj-column>
-        <mj-button
-          css-class="text-content keep-white"
-          color="#ffffff"
-          background-color="transparent"
-          border="2px solid #ff69b4"
-          border-radius="12px"
-          href="https://google.com"
-        >
-          <span class="gmail-screen">
-            <span class="gmail-difference">Call to Action</span>
-          </span>
-        </mj-button>
+      <mj-column width="50%">
+        <mj-text align="right">
+          <div
+            class="text-content keep-white"
+            style="color: #ffffff !important"
+          >
+            <span class="gmail-screen">
+              <span class="gmail-difference">Forgot your password?</span>
+            </span>
+          </div>
+
+          <div
+            class="text-content-pink keep-pink"
+            style="color: #e72ef5 !important"
+          >
+            <a
+              href="{{snippets.redirect}}/users/forgot-password"
+              target="_blank"
+              style="color: #e72ef5 !important; text-decoration: none"
+              class="gmail-screen-pink"
+              rel="noopener"
+            >
+              <span class="gmail-difference-pink">Reset</span>
+            </a>
+          </div>
+        </mj-text>
       </mj-column>
+    </mj-section>
+    <mj-section css-class="dark-theme-blue" padding="0">
+      <mj-column>
+        <mj-image
+          src="https://promsklad.com.ua/test/img/banner_slot-gallery_secondary.png"
+          alt="Image"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section css-class="dark-theme-blue" padding="0">
+      <mj-column
+        ><mj-text
+          align="justify"
+          font-family="Roboto,Tahoma,Verdana,Segoe,sans-serif"
+          line-height="1.2"
+        >
+          <div>
+            <a
+              href="file:///home/mr/Project/work/email/slotgallery/%7B%7Bsnippets.redirect%7D%7D/bonus-terms-and-conditions"
+              target="_blank"
+              style="color: #e72ef5; text-decoration: none"
+              rel="noopener"
+            >
+              Terms &amp; Conditions
+            </a>
+          </div>
+          <div>
+            <span
+              class="text-content keep-white"
+              style="color: #767da2 !important"
+            >
+              <span class="gmail-screen">
+                <span class="gmail-difference">
+                  <ul>
+                    <li>Dive into spinning fun with</li>
+                    <li>Dive into spinning fun with</li>
+                    <li>Dive into spinning fun with</li>
+                    <li>
+                      The promotion is active: 08.01.2025, 00:00 UTC -
+                      10.01.2025, 23:59 UTC;
+                    </li>
+
+                    <li>
+                      If the “Fortune Five” slot isn't available in your
+                      country, you will get free spins in “Mice & Magic Wonder
+                      Spin” slot;
+                    </li>
+                    <li>
+                      Minimum deposit for the bonus: {{snippets.var30eurnew}}
+                    </li>
+
+                    <li>Wager for the bonus: x40;</li>
+
+                    <li>
+                      Maximum deposit bonus amount: {{snippets.var150eurnew}}
+                    </li>
+
+                    <li>Promo cannot be combined with other offers;</li>
+
+                    <li>Only one offer is available to one client;</li>
+
+                    <li>
+                      Canceling any of the free spin sets, cash bonuses or their
+                      results within one promotion will automatically lead to
+                      further cancelation of the remaining parts of this
+                      promotion;
+                    </li>
+
+                    <li>
+                      The maximum win amount from any deposit free spin bonus is
+                      {{snippets.valentin100}} or equivalent in other
+                      currencies/cryptocurrencies unless otherwise indicated.
+                      Deposit free spins have a maximum cashout in the amount of
+                      x10 from the deposit sum unless otherwise stated;
+                    </li>
+
+                    <li>
+                      Deposit cash bonuses have a maximum cashout of
+                      {{snippets.var3000}} or equivalent in other
+                      currencies/cryptocurrencies unless otherwise indicated
+                    </li>
+                  </ul>
+                </span>
+              </span>
+            </span>
+          </div>
+        </mj-text></mj-column
+      >
     </mj-section>
   </mj-body>
 </mjml>
